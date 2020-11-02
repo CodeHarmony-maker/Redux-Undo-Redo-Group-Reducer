@@ -2,7 +2,7 @@ import React from "react";
 import {Button} from "react-bootstrap";
 import {connect} from "react-redux";
 import { ActionCreators as UndoActionCreators } from 'redux-undo'
-import {onRedo, onUndo} from "./Redux/Actions/UndoRedoAction";
+import {onUndo, onRedo} from "./Redux/Actions/UndoRedoAction";
 
 let UndoRedo = ({canUndo, canRedo, onUndo, onRedo}) => (
   <div style={{display: "inline-block"}} className="inner-gb-right">
@@ -37,6 +37,14 @@ const mapStateToProps = (state) => {
   };
 };
 
-UndoRedo = connect(mapStateToProps, {onUndo, onRedo})(UndoRedo);
+// const mapDispatchToProps = ({
+//   onUndo: UndoActionCreators.undo,
+//   onRedo: UndoActionCreators.redo
+// })
 
-export default UndoRedo;
+UndoRedo = connect(
+  mapStateToProps,
+  {onUndo,onRedo}
+)(UndoRedo)
+
+export default UndoRedo

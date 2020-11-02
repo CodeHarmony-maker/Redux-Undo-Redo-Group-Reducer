@@ -4,9 +4,9 @@ import {ActionCreators as UndoActionCreators} from "redux-undo";
 export const onUndo = () => async (dispatch) => {
   try {
     dispatch(UndoActionCreators.undo());
-    dispatch({
-      type: UNDO,
-    });
+    // dispatch({
+    //   type: UNDO,
+    // });
   } catch (err) {
     dispatch({
       type: ERROR,
@@ -20,9 +20,9 @@ export const onUndo = () => async (dispatch) => {
 export const onRedo = () => async (dispatch) => {
   try {
     dispatch(UndoActionCreators.redo());
-    dispatch({
-      type: REDO,
-    });
+    // dispatch({
+    //   type: REDO,
+    // });
   } catch (err) {
     dispatch({
       type: ERROR,

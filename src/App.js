@@ -10,6 +10,7 @@ function App() {
   const dispatch = useDispatch();
   const UndoGroupState = useSelector((state) => state.undoGroup);
   const ThirdReducer = useSelector((state) => state.ThirdReducer);
+  console.log("UndoGroupState",UndoGroupState)
   return (
     <div className="App">
       <h1>UNDO GROUP</h1>
