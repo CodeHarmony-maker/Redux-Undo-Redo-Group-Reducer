@@ -1,4 +1,5 @@
 export const FIRST_CASE_ONE = "FIRST_CASE_ONE";
+export const FIRST_TARGET = "FIRST_TARGET";
 export const SECOND_CASE_ONE = "SECOND_CASE_ONE";
 export const THIRD_CASE_ONE = "THIRD_CASE_ONE";
 export const UNDO = "UNDO";
