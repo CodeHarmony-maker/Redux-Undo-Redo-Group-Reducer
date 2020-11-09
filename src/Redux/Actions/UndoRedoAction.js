@@ -1,11 +1,11 @@
-import {UNDO, REDO, ERROR} from "./types";
+import {UNDO, REDO, ERROR, UNDO_FIRST} from "./types";
 import {ActionCreators as UndoActionCreators} from "redux-undo";
 
 export const onUndo = () => async (dispatch) => {
   try {
     dispatch(UndoActionCreators.undo());
     // dispatch({
-    //   type: UNDO,
+    //   type: UNDO_FIRST,
     // });
   } catch (err) {
     dispatch({

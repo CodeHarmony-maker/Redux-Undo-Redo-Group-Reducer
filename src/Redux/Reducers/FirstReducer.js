@@ -1,7 +1,7 @@
-import {FIRST_CASE_ONE, UNDO, REDO, ERROR} from "../Actions/types";
-
+import {FIRST_CASE_ONE, UNDO, REDO, ERROR, UNDO_FIRST} from "../Actions/types";
+ import {firstClick} from "../Fucntionalities/FirstCase"
 const initialState = {
-  first: "First-1",
+  first: 1,
 };
 
 const FirstReducer = (state = initialState, action) => {
@@ -10,9 +10,9 @@ const FirstReducer = (state = initialState, action) => {
     case FIRST_CASE_ONE:
       return {
         ...state,
-        first: payload
+        first: firstClick(state.first)
       };
-    case UNDO:
+    case UNDO_FIRST:
       return {
         ...state,
       };

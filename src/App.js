@@ -18,9 +18,9 @@ function App() {
       <h3>{UndoGroupState.present.FirstReducer.first}</h3>
       <h3>{UndoGroupState.present.SecondReducer.second}</h3>
       <h3>{ThirdReducer.third}</h3>
-      <Button onClick={()=>{dispatch(first_case_one("1"))}}>1</Button>
-      <Button onClick={()=>{dispatch(second_case_one("2"))}}>2</Button>
-      <Button onClick={()=>{dispatch(third_case_one("3"))}}>3</Button>
+      <Button onClick={()=>{dispatch(first_case_one())}}>1</Button>
+      <Button onClick={()=>{dispatch(second_case_one())}}>2</Button>
+      <Button onClick={()=>{dispatch(third_case_one())}}>3</Button>
     </div>
   );
 }
