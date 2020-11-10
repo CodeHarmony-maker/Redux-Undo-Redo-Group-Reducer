@@ -8,7 +8,7 @@ import thunk from "redux-thunk";
 
 import rootReducer from "./Reducers";
 
-const middlewares = [thunk, logger];
+const middlewares = [thunk];
 const initialState = {};
 
 const store = createStore(
